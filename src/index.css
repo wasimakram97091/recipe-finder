@@ -1,13 +1,165 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-image {
+  position: relative;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(8, 8, 8, 0.5)), url("https://c1.wallpaperflare.com/preview/116/24/34/cook-healthy-food-eat.jpg");
+  min-height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background-image: linear-gradient(#99bce6, #9ce874) !important;
+}
+
+.text-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-title {
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+}
+
+.search-heading {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.detailsPageContent {
+  padding-top: 100px !important;
+}
+.nav-li {
+  font-size: 22px;
+  /* color: #fff !important; */
+}
+.card-item {
+  overflow: hidden;
+}
+.card-img {
+  transition: ease-in-out 0.3s;
+  width: 100%;
+}
+
+.card-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.search-by {
+  font-size: 25px;
+}
+
+.caption {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.caption h3 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.caption p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.caption i {
+  color: red;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 574px) {
+  .nav-li {
+    font-size: 17px;
+  }
+
+  .nav-li img {
+    width: 50px;
+  }
+
+  .header-title {
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+  }
+
+  .ui.big.button {
+    font-size: 13px !important;
+  }
+  .text-content {
+    top: 60%;
+  }
+
+  .search-heading {
+    font-size: 23px;
+  }
+
+  .search-by {
+    margin: 0 !important;
+    font-size: 15px;
+    margin-bottom: 10px !important;
+  }
+  .ui.input {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .ui.center.aligned.header {
+    font-size: 20px !important;
+  }
+  .grid-col {
+    width: 100% !important;
+  }
+
+  .card-item .card-img {
+    height: 150px !important;
+  }
+  .card-des h4 {
+    font-size: 13px;
+  }
+
+  .card-item {
+    width: 100% !important;
+    padding: 0 20px;
+  }
+  .navbar {
+    width: 100% !important;
+  }
+  .ui.grid {
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-left: 0 !important;
+    flex-direction: column !important;
+  }
+
+  .grid-column {
+    width: 100% !important;
+  }
+  div.ui[class*="four column"].doubling:not(.stackable).grid > .column:not(.row) {
+    width: 100% !important;
+  }
+
+  .details-img-div {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .details-img-div img {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
